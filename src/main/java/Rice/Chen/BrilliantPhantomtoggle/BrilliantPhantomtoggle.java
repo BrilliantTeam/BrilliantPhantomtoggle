@@ -66,10 +66,11 @@ public class BrilliantPhantomtoggle extends JavaPlugin implements Listener {
         return config.getBoolean("players." + player.getUniqueId(), true);
     }
 
-    public void setPhantomSpawn(Player player, boolean state) {
-        config.set("players." + player.getUniqueId(), state);
+    public void setPhantomSpawn(Player player, boolean newState, boolean oldState) {
+        config.set("players." + player.getUniqueId(), newState);
         saveConfig();
-        if (!state) {
+        
+        if (!newState && oldState) {
             resetPlayerRestTime(player);
         }
     }

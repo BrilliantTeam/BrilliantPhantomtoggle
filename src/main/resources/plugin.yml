@@ -10,14 +10,14 @@ folia-supported: true
 commands:
   phantom:
     description: '夜魅生成控制'
-    usage: /phantom toggle - 切換夜魅生成狀態
+    usage: /phantom toggle|info
     aliases: [pt]
-    permission-message: §7｜§6系統§7｜§f飯娘：§7你沒有權限使用此指令！
+    permission-message: §7｜§6系統§7｜§f飯娘：§7您沒有權限使用此指令！
 
 permissions:
   phantomtoggle.force:
     description: '允許使用強制生成夜魅的指令'
     default: op
   phantomtoggle.info:
-    description: '允許查看玩家的夜魅生成相關資訊'
+    description: '允許查看其他玩家的夜魅生成相關資訊'
     default: op
