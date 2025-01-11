@@ -1,0 +1,5 @@
+# BrilliantPhantomtoggle 配置文件
+
+# 玩家資料將會自動儲存在這裡
+# 格式: UUID: true/false
+players: {}

@@ -1,0 +1,23 @@
+name: BrilliantPhantomtoggle
+version: '1.0'
+main: Rice.Chen.BrilliantPhantomtoggle.BrilliantPhantomtoggle
+api-version: '1.20'
+depend: [PlaceholderAPI]
+author: RiceChen
+description: '控制夜魅生成的插件，允許玩家自行開關夜魅生成。'
+folia-supported: true
+
+commands:
+  phantom:
+    description: '夜魅生成控制'
+    usage: /phantom toggle - 切換夜魅生成狀態
+    aliases: [pt]
+    permission-message: §7｜§6系統§7｜§f飯娘：§7你沒有權限使用此指令！
+
+permissions:
+  phantomtoggle.force:
+    description: '允許使用強制生成夜魅的指令'
+    default: op
+  phantomtoggle.info:
+    description: '允許查看玩家的夜魅生成相關資訊'
+    default: op
